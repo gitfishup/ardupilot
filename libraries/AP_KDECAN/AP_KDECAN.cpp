@@ -105,11 +105,13 @@ void AP_KDECAN::init(uint8_t driver_index, bool enable_filters)
 
     if (_initialized) {
         debug_can(AP_CANManager::LOG_ERROR, "already initialized");
+         debug_can(AP_CANManager::LOG_ERROR, "Interface not found");
         return;
     }
 
     if (_can_iface == nullptr) {
         debug_can(AP_CANManager::LOG_ERROR, "Interface not found");
+         debug_can(AP_CANManager::LOG_ERROR, "Interface not found");
         return;
     }
 
